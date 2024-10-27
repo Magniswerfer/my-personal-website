@@ -18,10 +18,10 @@ export default function BlogCard({ title, summary, date, slug }: BlogCardProps) 
   return (
     <article class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
       <a href={`/blog/${slug}`} class="block p-6">
-        <p class="text-sm text-gray-500 mb-2">{formatDate(date)}</p>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">{title}</h3>
-        <p class="text-gray-600 line-clamp-2">{summary}</p>
-        <div class="mt-4 flex items-center text-indigo-600 font-medium">
+        <p class="text-sm text-neutral-800 mb-2">{formatDate(date)}</p>
+        <h3 class="text-xl font-bold text-netrual-900 mb-2">{title}</h3>
+        <p class="text-neutral-800 line-clamp-2">{summary}</p>
+        <div class="mt-4 flex items-center text-secondary-500 hover:text-secondary-800 font-medium">
           Read more
           <svg 
             class="w-4 h-4 ml-1" 

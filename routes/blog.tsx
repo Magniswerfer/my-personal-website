@@ -31,14 +31,14 @@ export default function BlogPage({ data }: PageProps<{ posts: BlogPost[] }>) {
     
     return (
         <Layout title="Blog | Magnus H. Kaspersen">
-            <div class="min-h-screen bg-[#EEE5E9]">
+            <div class="min-h-screen bg-neutral-100">
                 <Navbar />
                 <PageHeader 
                     title="Blog" 
-                    subtitle="Tanker og idéer om softwareudvikling, teknologi og alt derimellem"
+                    subtitle="Tanker og idéer om design, AI, digital teknologi og alt derimellem"
                 />
                 {/* Blog Posts List */}
-                <main class="container mx-auto px-4 py-12 ">
+                <main class="container mx-auto px-4 py-4 ">
                     <div class="space-y-8">
                         {posts.map((post) => (
                             <article 
@@ -49,18 +49,18 @@ export default function BlogPage({ data }: PageProps<{ posts: BlogPost[] }>) {
                                     href={`/blog/${post.slug}`}
                                     class="block p-6 hover:text-inherit"
                                 >
-                                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                                    <div class="flex items-center text-sm mb-2">
                                         <time datetime={post.date}>
                                             {formatDate(post.date)}
                                         </time>
                                     </div>
-                                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-gray-600">
+                                    <h2 class="text-2xl font-bold mb-3 group-hover:text-gray-600">
                                         {post.title}
                                     </h2>
                                     <p class="text-gray-600 line-clamp-2 mb-4">
                                         {post.summary}
                                     </p>
-                                    <div class="flex items-center text-indigo-600 font-medium">
+                                    <div class="flex items-center text-secondary-600 hover:text-secondary:800 font-medium">
                                         Read more
                                         <svg 
                                             class="w-4 h-4 ml-1" 

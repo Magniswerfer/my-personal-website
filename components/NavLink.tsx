@@ -10,10 +10,10 @@ interface NavLinkProps {
 
 export function NavLink({ href, variant = "primary", class: className, children }: NavLinkProps) {
   const styles = {
-    primary: "bg-[#FF934F] hover:bg-[#A5668B] text-[#07090F] focus:ring-[#FF934F]",
-    secondary: "bg-[#A5668B] hover:bg-[#07090F] text-[#EEE5E9] focus:ring-[#A5668B]",
-    outline: "border-2 border-[#07090F] hover:bg-[#07090F] hover:text-[#EEE5E9] text-[#07090F] focus:ring-[#07090F]",
-    light: "border-2 border-[#EEE5E9] hover:bg-[#EEE5E9] hover:text-[#07090F] text-[#EEE5E9] focus:ring-[#EEE5E9]"
+    primary: "bg-primary-500 hover:bg-primary-700 text-light-100 focus:ring-secondary-500",
+    secondary: "bg-secondary-500 hover:bg-secondary-700 text-light-100 focus:ring-primary-500",
+    outline: "border-2 border-neutral-800 hover:bg-neutral-800 hover:text-secondary-100 hover:border-light-100 text-neutral-800 focus:ring-secondary-500",
+    light: "border-2 border-neutral-100 hover:bg-neutral-100 hover:text-secondary-800 text-neutral-100 focus:ring-secondary-500",
   };
 
   return (
