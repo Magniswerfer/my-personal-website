@@ -37,7 +37,7 @@ export default function ProjectPage({ data }: PageProps<Project>) {
 
             {/* Project Links and Technologies */}
             <div class="container mx-auto px-4 py-6">
-                <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-200 pb-6">
+                <div class="flex flex-wrap items-center justify-between gap-4">
                     {/* Project Links */}
                     <div class="flex items-center gap-4">
                         {githubUrl && (
