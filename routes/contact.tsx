@@ -8,7 +8,7 @@ import CustomIcon from "../components/CustomIcons.tsx";
 export default function ContactPage(_props: PageProps) {
   return (
     <Layout title="Contact | Magnus H. Kaspersen">
-      <div class="min-h-screen bg-gray-50">
+      <div class="min-h-screen bg-[#EEE5E9]">
         <Navbar />
         <PageHeader 
           title="Contact"

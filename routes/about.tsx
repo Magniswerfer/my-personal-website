@@ -97,7 +97,7 @@ export default function AboutPage(_props: PageProps) {
 
     return (
         <Layout title="About | Magnus H. Kaspersen">
-        <div class="min-h-screen bg-gray-50">
+        <div class="min-h-screen bg-[#EEE5E9]">
         <Navbar />
         <PageHeader 
         title="About Me"
@@ -105,7 +105,7 @@ export default function AboutPage(_props: PageProps) {
         />
 
         {/* Personal Introduction */}
-        <section class="py-12 bg-white">
+        <section class="py-12 bg-[#EEE5E9]">
         <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto">
         <div class="prose prose-slate max-w-none">
@@ -192,7 +192,7 @@ export default function AboutPage(_props: PageProps) {
         </div>
 
         {/* Publications Section */}
-        <section class="py-12 bg-white">
+        <section class="py-4 bg-white mb-5 rounded-lg">
         <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">Publications</h2>
@@ -278,18 +278,6 @@ export default function AboutPage(_props: PageProps) {
         </div>
         </section>
 
-        {/* Download CV Button */}
-        <div class="text-center">
-        <a 
-        href="/path-to-your-cv.pdf" 
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
-        >
-        <CustomIcon name="arrow-right" size={20} className="mr-2" />
-        Download CV
-        </a>
-        </div>
         </div>
         </div>
         </section>

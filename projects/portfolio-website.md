@@ -6,7 +6,7 @@ githubUrl: https://github.com/yourusername/portfolio
 liveUrl: https://your-portfolio.com
 featured: true
 order: 1
-thumbnail: /images/portfolio-thumbnail.jpg
+thumbnail: /images/projects/thumbnail-website.png
 ---
 
 ## Overview
