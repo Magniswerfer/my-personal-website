@@ -50,7 +50,7 @@ export default function Home({ data }: PageProps<HomeProps>) {
         {/* Featured Blog Posts Section */}
         <section class="py-16">
         <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-[#07090F] mb-8">Latest Posts</h2>
+        <h2 class="text-3xl font-bold text-[#07090F] mb-8">Seneste Posts</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
             <BlogCard
@@ -68,7 +68,7 @@ export default function Home({ data }: PageProps<HomeProps>) {
         variant="primary" 
         class="inline-flex items-center gap-2"
         >
-        View all posts
+        Alle posts 
         </NavLink> 
 
         </div>
@@ -78,7 +78,7 @@ export default function Home({ data }: PageProps<HomeProps>) {
         {/* Featured Projects Section */}
         <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-[#07090F] mb-8">Featured Projects</h2>
+        <h2 class="text-3xl font-bold text-[#07090F] mb-8">Udvalgte Projekter</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {featuredProjects.map((project) => (
             <FeaturedProjectCard key={project.slug} project={project} />
@@ -90,8 +90,8 @@ export default function Home({ data }: PageProps<HomeProps>) {
         variant="primary" 
         class="inline-flex items-center gap-2"
         >
-        View all projects
-        </NavLink> 
+        Se alle projekter
+         </NavLink> 
         </div>
         </div>
         </section>
@@ -99,17 +99,16 @@ export default function Home({ data }: PageProps<HomeProps>) {
         {/* Contact/Connect Section */}
         <section class="py-16">
         <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold text-[#07090F] mb-4">Let's Connect</h2>
+        <h2 class="text-3xl font-bold text-[#07090F] mb-4">Lad os snakke!</h2>
         <p class="text-[#7C7C7C] mb-8 max-w-2xl mx-auto">
-        I'm always interested in hearing about new projects and opportunities.
-            Feel free to reach out!
+            Jeg er altid interesseret i at høre om nye projekter og mulihedheder. Du må endelig bare skrive! 
         </p>
         <NavLink 
         href="/projects" 
         variant="secondary" 
         class="inline-flex items-center gap-2"
         >
-        Get in touch
+        Skriv til mig!
         </NavLink>         
         </div>
         </section>
