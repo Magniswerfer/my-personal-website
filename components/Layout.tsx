@@ -49,7 +49,7 @@ export default function Layout({
             w-full 
             max-w-7xl 
             mx-auto 
-            lg:my-8
+            xl:my-8
             "
         >
           <div
@@ -57,8 +57,8 @@ export default function Layout({
             bg-white
             border
             border-light-100
-            lg:rounded-lg
-            lg:overflow-hidden
+            xl:rounded-lg
+            xl:overflow-hidden
             "
           >
             {children}
