@@ -5,14 +5,14 @@ import Navbar from "../islands/Navbar.tsx";
 import PageHeader from "../components/PageHeader.tsx";
 import CustomIcon from "../components/CustomIcons.tsx";
 
-interface Experience {
+interface Erfaring {
   title: string;
   company: string;
   period: string;
   description: string[];
 }
 
-interface Education {
+interface Uddannelse {
   degree: string;
   school: string;
   period: string;
@@ -32,30 +32,50 @@ interface Publication {
   link?: string;
   doi?: string;
   abstract?: string;
-  type: "journal" | "conference" | "thesis" | "other";
+  type: "tidsskrift" | "konference" | "afhandling" | "other";
 }
 
 export default function AboutPage(_props: PageProps) {
-  const experiences: Experience[] = [
+  const experiences: Erfaring[] = [
     {
-      title: "Frontend Developer",
-      company: "Frontmatec",
-      period: "2022 - Present",
+      title: "Partner & AI Ekspert",
+      company: "Creative Oak",
+      period: "2023 - Nu",
       description: [
-        "Developed and maintained web applications using React and TypeScript",
-        "Implemented responsive designs and modern UI components",
-        "Collaborated with backend developers to integrate RESTful APIs",
+        "Foredrag og workshops om AI",
+        "Udvikling af hjemmesider i Webflow",
+      ],
+    },
+    {
+      title: "Postdoctoral Researcher",
+      company: "Aarhus Universitet",
+      period: "2023 - Nu",
+      description: [
+        "Forskning i kunstig intelligens og uddannelse",
+        "Design og udvikling af forskningsprototyper",
       ],
     },
     // Add more experiences as needed
   ];
 
-  const education: Education[] = [
+  const education: Uddannelse[] = [
     {
-      degree: "Master of Science in Software Development",
-      school: "IT University of Copenhagen",
-      period: "2020 - 2022",
-      description: "Specialized in web technologies and software architecture",
+      degree: "Ph.d., Datalogi",
+      school: "Aarhus Universitet",
+      period: "2019-2023",
+      description: "Forskning i kunstig intelligens i skolen",
+    },
+    {
+      degree: "Kandidatgrad, IT Produktudvikling, cand.scient.it",
+      school: "Aarhus Universitet",
+      period: "2017 - 2019",
+      description: "Speciale i kunstig intelligens i gymnasiet",
+    },
+    {
+      degree: "Bachelorgrad, IT Produktudvikling",
+      school: "Aarhus Universitet",
+      period: "2014 - 2019",
+      description: "Fokus på designforskning og produktdesign",
     },
     // Add more education entries
   ];
@@ -63,11 +83,15 @@ export default function AboutPage(_props: PageProps) {
   const skills: Skill[] = [
     {
       category: "Frontend",
-      items: ["React", "TypeScript", "HTML/CSS", "Tailwind CSS"],
+      items: ["Fresh", "TypeScript", "HTML/CSS", "Tailwind CSS"],
     },
     {
       category: "Backend",
-      items: ["Node.js", "Python", "SQL", "MongoDB"],
+      items: ["Deno", "Python"],
+    },
+    {
+      category: "Embedded",
+      items: ["Arduino", "Raspberry Pi", "C++"],
     },
     // Add more skill categories
   ];
@@ -75,26 +99,30 @@ export default function AboutPage(_props: PageProps) {
   const publications: Publication[] = [
     {
       title:
-        "Analyzing Developer Productivity in Software Projects: A Mixed-Methods Approach",
-      authors: ["Magnus H. Kaspersen", "Other Author", "Another Author"],
-      venue: "International Conference on Software Engineering (ICSE 2023)",
-      date: "2023",
-      type: "conference",
-      doi: "10.1145/1234567.1234568",
-      link: "https://example.com/paper",
+        "Staging reflections on ethical dilemmas in machine learning: A card-based design workshop for high school students",
+      authors: [
+        "Karl-Emil Kjær Bilstrup",
+        "Magnus H Kaspersen",
+        "Marianne Graves Petersen",
+      ],
+      venue: "Designing Interactive System (DIS)",
+      date: "2020",
+      type: "konference",
+      doi: "10.1145/3357236.3395558",
+      link: "https://dl.acm.org/doi/abs/10.1145/3357236.3395558",
       abstract:
-        "This paper presents a comprehensive analysis of developer productivity metrics...",
+        "The increased use of machine learning (ML) in society raises questions of how ethical dilemmas inherent in computational artefacts can be made understandable and explorable for students. To investigate this, we developed a card-based design workshop that allows students to reflect on ethical dilemmas by designing their own ML applications. The workshop was developed in an iterative process engaging four high school classrooms with students aged 16-20. We found that scaffolding students in designing meaningful ML systems served to qualify their ethical reflections. Further students' design processes allowed them to engage with the ethical dilemmas and to tie these to the properties of the technology and to their design decisions. We suggest seeing technology-close discussions about ethics as a goal in design processes, and prototyping as a means to ground these discussions in students' own design decisions, and we contribute a workshop format and design artefacts that allow for this.",
     },
     {
       title:
-        "Master's Thesis: Improving Web Application Performance Through Static Analysis",
+        "AI Education that Matters: Designing Computationally Empowering Learning Tools for Machine Learning",
       authors: ["Magnus H. Kaspersen"],
-      venue: "IT University of Copenhagen",
-      date: "2022",
-      type: "thesis",
-      link: "https://example.com/thesis",
+      venue: "Aarhus Universitet",
+      date: "2023",
+      type: "afhandling",
+      link: "https://pure.au.dk/portal/da/publications/ai-education-that-matters-designing-computationally-empowering-le",
       abstract:
-        "This thesis explores novel approaches to improving web application performance...",
+        "Artificial intelligence (AI), particularly machine learning (ML), has become nearly ubiquitous in recent years. From social media to medical work, AI provides the infrastructure to many of our most used and critical IT systems. However, such systems are prone to unintended biases rooted in historical data, their inner workings are opaque, and we have seen intentional nefarious use in, e.g., democratic elections. This development calls for a democratization of AI: that its further development and use be made political and that public debate is fostered around it. Qualifying this necessitates that the public develops a critical understanding of what constitutes an AI system, how such systems are designed, and what potential impacts they might have. The recency of the proliferation of AI means that while some suggestions for AI curricula exist, the design space for concrete learning tools and activities is yet ill-defined. Most previous work focuses on developing children’s skills and competencies with regard to AI, and little work exists that explicitly aims to support critical understanding of and attitudes toward it. Through a series of constructive design-research experiments aimed at sec- ondary school students, this dissertation explores the design space for learning tools and activities for computationally empowering ML education: ML education that engages learners in understanding ML to scaffolding critical reflection on its role in their own life, and in society around them. Based on six experimental designs and classroom interventions with these, the thesis makes three main contributions to HCI, child-computer interaction, and computing education. First, by analyzing the experiments and discussing them in relation to the literature, I present six concrete design principles for AI learning tools and activities with computational empowerment as the goal. Further, to qualify how these principles interact in concrete designs, I discuss their tensions and synergies. Second, I present the CEML framework: an approach to computationally empowering ML education based on a technological, material foundation that highlights the ethics and morality baked into technology and offers concrete ways of including this in computing education. Finally, I reframe my original research program and return to HCI to present Remarkable AI: an approach to AI systems design that focuses on fostering agency in users and empowering them with regard to its role in their lives. In addition, I argue that designers and HCI researchers should consider remarkableness as a sensitizing concept when designing AI systems. Together, these contributions are intended to support designers, researchers, and, not the least, educators in teaching and designing tools and activities that democratize AI and open it up for political discourse.",
     },
     // Add more publications as needed
   ];
@@ -114,16 +142,18 @@ export default function AboutPage(_props: PageProps) {
             <div class="max-w-3xl mx-auto">
               <div class="prose prose-slate max-w-none">
                 <p class="text-lg leading-relaxed">
-                  Hello! I'm Magnus, a software developer based in Denmark with
-                  a passion for building modern web applications. I specialize
-                  in frontend development with React and TypeScript, but I'm
-                  also experienced with various backend technologies.
+                  Hej! Jeg er Magnus! Jeg er passioneret omkring design (både af
+                  den digitale og fysiske slags). Derudover elsker jeg at nørde
+                  med computere og IT. Jeg har fx selv skrevet min egen
+                  hjemmeside helt fra bunden. Professionelt er jeg partner i
+                  Creative Oak, og postdoc på Datalogisk Institut, Aarhus
+                  Universitet.
                 </p>
                 <p class="text-lg text-gray-600 leading-relaxed">
-                  When I'm not coding, I enjoy writing about technology and
-                  software development on my blog. I'm particularly interested
-                  in web performance, developer experience, and building
-                  intuitive user interfaces.
+                  Når jeg ikke koder, nyder jeg at skrive om teknologi og mine
+                  eventyr ud i softwareudvikling på min blog. Derudover elsker
+                  jeg at hacke ting, den nyeste færdighed jeg har tilføjet til
+                  dét repetoir er syning.
                 </p>
               </div>
             </div>
@@ -134,11 +164,9 @@ export default function AboutPage(_props: PageProps) {
         <section class="py-12">
           <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
-              {/* Experience */}
+              {/* Erfaring */}
               <div class="mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">
-                  Experience
-                </h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Erfaring</h2>
                 {experiences.map((exp, index) => (
                   <div key={index} class="mb-8">
                     <div class="flex justify-between items-start mb-2">
@@ -159,9 +187,11 @@ export default function AboutPage(_props: PageProps) {
                 ))}
               </div>
 
-              {/* Education */}
+              {/* Uddannelse */}
               <div class="mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Education</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                  Uddannelse
+                </h2>
                 {education.map((edu, index) => (
                   <div key={index} class="mb-6">
                     <div class="flex justify-between items-start mb-2">
@@ -180,9 +210,11 @@ export default function AboutPage(_props: PageProps) {
                 ))}
               </div>
 
-              {/* Skills */}
+              {/* Færdigheder */}
               <div class="mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Skills</h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                  Færdigheder
+                </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {skills.map((skill, index) => (
                     <div key={index}>
@@ -209,12 +241,17 @@ export default function AboutPage(_props: PageProps) {
                 <div class="container mx-auto px-4">
                   <div class="max-w-3xl mx-auto">
                     <h2 class="text-2xl font-bold text-gray-900 mb-6">
-                      Publications
+                      Publikationer
                     </h2>
 
                     {/* Filter and display by type */}
                     {(
-                      ["conference", "journal", "thesis", "other"] as const
+                      [
+                        "konference",
+                        "tidsskrift",
+                        "afhandling",
+                        "other",
+                      ] as const
                     ).map((type) => {
                       const typePublications = publications.filter(
                         (p) => p.type === type,
@@ -226,7 +263,7 @@ export default function AboutPage(_props: PageProps) {
                           <h3 class="text-xl font-semibold text-gray-900 mb-4 capitalize">
                             {type === "other"
                               ? "Other Publications"
-                              : `${type}s`}
+                              : `${type}`}
                           </h3>
                           <div class="space-y-6">
                             {typePublications.map((pub, index) => (
