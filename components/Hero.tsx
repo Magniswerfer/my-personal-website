@@ -4,7 +4,7 @@ export default function Hero() {
       {/* Hero Image */}
       <div class="absolute inset-0">
         <img
-          src="/api/placeholder/1920/1080"  // Replace with your actual hero image
+          src="/images/magnusHero_95.jpg"  // Replace with your actual hero image
           alt="Hero background"
           class="w-full h-full object-cover opacity-50"
         />

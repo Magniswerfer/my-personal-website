@@ -1,5 +1,7 @@
+// components/Layout.tsx
 import { Head } from "$fresh/runtime.ts";
 import { ComponentChildren } from "preact";
+import Footer from "./Footer.tsx";
 
 interface LayoutProps {
   children: ComponentChildren;
@@ -7,7 +9,11 @@ interface LayoutProps {
   description?: string;
 }
 
-export default function Layout({ children, title = "Magnus H. Kaspersen", description = "Personal website and blog" }: LayoutProps) {
+export default function Layout({ 
+  children, 
+  title = "Magnus H. Kaspersen", 
+  description = "Personal website and blog" 
+}: LayoutProps) {
   return (
     <>
       <Head>
@@ -21,7 +27,12 @@ export default function Layout({ children, title = "Magnus H. Kaspersen", descri
           });
         `}} />
       </Head>
-      {children}
+      <div class="flex flex-col min-h-screen">
+        <main class="flex-grow">
+          {children}
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

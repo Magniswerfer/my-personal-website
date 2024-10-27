@@ -4,10 +4,14 @@
 
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
+import * as $about from "./routes/about.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $blog from "./routes/blog.tsx";
 import * as $blog_slug_ from "./routes/blog/[slug].tsx";
+import * as $contact from "./routes/contact.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $projects from "./routes/projects.tsx";
+import * as $projects_slug_ from "./routes/projects/[slug].tsx";
 import * as $Navbar from "./islands/Navbar.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -15,10 +19,14 @@ const manifest = {
   routes: {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
+    "./routes/about.tsx": $about,
     "./routes/api/joke.ts": $api_joke,
     "./routes/blog.tsx": $blog,
     "./routes/blog/[slug].tsx": $blog_slug_,
+    "./routes/contact.tsx": $contact,
     "./routes/index.tsx": $index,
+    "./routes/projects.tsx": $projects,
+    "./routes/projects/[slug].tsx": $projects_slug_,
   },
   islands: {
     "./islands/Navbar.tsx": $Navbar,
