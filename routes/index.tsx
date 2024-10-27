@@ -112,7 +112,7 @@ export default function Home({ data }: PageProps<HomeProps>) {
               mulihedheder. Du må endelig bare skrive!
             </p>
             <NavLink
-              href="/projects"
+              href="/contact"
               variant="secondary"
               class="inline-flex items-center gap-2"
             >
