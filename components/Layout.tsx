@@ -47,7 +47,7 @@ export default function Layout({
           class="
             flex-grow 
             w-full 
-            max-w-7xl 
+            max-w-6xl 
             mx-auto 
             xl:my-8
             "
