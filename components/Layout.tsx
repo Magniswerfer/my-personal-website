@@ -36,7 +36,7 @@ export default function Layout({
             flex 
             flex-col 
             min-h-screen 
-            bg-neutral-500 
+            bg-neutral-200 
             text-neutral-800
             antialiased
             selection:bg-accent-500

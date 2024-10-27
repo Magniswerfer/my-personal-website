@@ -10,11 +10,11 @@ export default function Footer() {
           <div class="md:col-span-2">
             <h3 class="font-bold text-xl text-gray-900 mb-4">Magnus H. Kaspersen</h3>
             <p class="text-gray-600 mb-4">
-              Software Developer passionate about creating meaningful digital experiences.
+              Foredrag om AI, Design, Forskning og Hacking.
             </p>
             <div class="flex space-x-4">
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/magniswerfer" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="text-gray-600 hover:text-gray-900"
@@ -22,7 +22,7 @@ export default function Footer() {
                 <CustomIcon name="github" size={24} />
               </a>
               <a 
-                href="https://linkedin.com/in/yourusername" 
+                href="https://linkedin.com/in/magnushoholt" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="text-gray-600 hover:text-gray-900"
@@ -34,16 +34,20 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 class="font-semibold text-gray-900 mb-4">Quick Links</h4>
+            <h4 class="font-semibold text-gray-900 mb-4">Links</h4>
             <ul class="space-y-2">
               <li>
                 <a href="/blog" class="text-gray-600 hover:text-gray-900">Blog</a>
               </li>
               <li>
-                <a href="/projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+                <a href="/projects" class="text-gray-600 hover:text-gray-900">Projekter</a>
               </li>
               <li>
-                <a href="/contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+                <a href="/about" class="text-gray-600 hover:text-gray-900">Om Magnus</a>
+              </li>
+
+              <li>
+                <a href="/contact" class="text-gray-600 hover:text-gray-900">Kontakt</a>
               </li>
             </ul>
           </div>

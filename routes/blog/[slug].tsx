@@ -25,7 +25,7 @@ export default function PostPage({ data }: PageProps) {
                 subtitle={summary}
                 date={date}
             />
-            <main class="container mx-auto px-4">
+            <main class="container mx-auto px-4 mb-4 min-h-screen">
                 <article
                     class="prose prose-slate max-w-none mt-8" 
                     dangerouslySetInnerHTML={{ __html: content }} 

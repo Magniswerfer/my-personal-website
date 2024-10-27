@@ -30,7 +30,7 @@ export default function Hero() {
           <p
             class="
                         text-xl 
-                        text-secondary-900
+                        text-neutral-800
                         mb-8
                         max-w-xl
                     "

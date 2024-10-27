@@ -22,7 +22,7 @@ export default function BlogCard({ title, summary, date, slug }: BlogCardProps) 
         <h3 class="text-xl font-bold text-netrual-900 mb-2">{title}</h3>
         <p class="text-neutral-800 line-clamp-2">{summary}</p>
         <div class="mt-4 flex items-center text-secondary-500 hover:text-secondary-800 font-medium">
-          Read more
+          Læs mere
           <svg 
             class="w-4 h-4 ml-1" 
             viewBox="0 0 24 24" 

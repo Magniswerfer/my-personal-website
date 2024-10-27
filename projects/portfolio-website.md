@@ -1,9 +1,8 @@
 ---
-title: Personal Portfolio Website
-description: A modern, fast portfolio website built with Fresh framework and Deno, featuring a blog, project showcase, and clean design
+title: Min Hjemmeside
+description: En moderne, hurtig hjemmeside bygget med Fresh og Deno. Med en blog, projektportfolio og helt hjemmelavet.
 technologies: ["Deno", "Fresh", "TypeScript", "Tailwind CSS", "Markdown"]
-githubUrl: https://github.com/yourusername/portfolio
-liveUrl: https://your-portfolio.com
+githubUrl: https://github.com/magniswerfer/my-personal-website
 featured: true
 order: 1
 thumbnail: /images/projects/thumbnail-website.png

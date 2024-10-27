@@ -139,20 +139,20 @@ function FeaturedProjectCard({ project }: { project: Project }) {
         </div>
       )}
       <div class="p-6">
-        <h3 class="text-xl font-bold text-primary-dark mb-3">
+        <h3 class="text-xl font-bold mb-3">
           <a
             href={`/projects/${project.slug}`}
-            class="hover:text-primary-purple"
+            class="hover:text-primary-600"
           >
             {project.title}
           </a>
         </h3>
-        <p class="text-primary-dark mb-4">{project.description}</p>
+        <p class="mb-4">{project.description}</p>
         <div class="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              class="px-3 py-1 bg-white text-primary-dark rounded-full text-sm"
+              class="px-3 py-1 bg-secondary-100 rounded-full text-sm"
             >
               {tech}
             </span>
@@ -164,7 +164,7 @@ function FeaturedProjectCard({ project }: { project: Project }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              class="flex items-center text-primary-gray hover:text-primary-dark"
+              class="flex items-center text-neutral-500 hover:text-primary-500"
             >
               <CustomIcon name="github" size={24} className="mr-2" />
               <span class="ml-1">Repository</span>

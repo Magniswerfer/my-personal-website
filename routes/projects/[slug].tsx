@@ -45,11 +45,11 @@ export default function ProjectPage({ data }: PageProps<Project>) {
                                 href={githubUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
+                                class="flex items-center gap-2 px-4 py-2 bg-neutral-800 text-light-100 rounded-lg hover:bg-neutral-600 transition-colors"
                             >
                             
                                 <CustomIcon name="github" size={24} class-name="mr-2" />
-                                <span>View Repository</span>
+                                <span>Gå til Repository</span>
                             </a>
                         )}
                         {liveUrl && (
@@ -57,7 +57,7 @@ export default function ProjectPage({ data }: PageProps<Project>) {
                                 href={liveUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                                class="flex items-center gap-2 px-4 py-2 bg-secondary-500 text-light-100 rounded-lg hover:bg-secondary-800 transition-colors"
                             >
                                 <CustomIcon name="globe" size={24} class-name="mr-2" />
                                 <span>Live Demo</span>
@@ -70,7 +70,7 @@ export default function ProjectPage({ data }: PageProps<Project>) {
                         {technologies.map((tech) => (
                             <span
                                 key={tech}
-                                class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
+                                class="px-3 py-1 bg-secondary-100 text-neutral-800 rounded-full text-sm"
                             >
                                 {tech}
                             </span>
