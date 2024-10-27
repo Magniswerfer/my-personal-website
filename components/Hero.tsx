@@ -1,5 +1,4 @@
 import { NavLink } from "./NavLink.tsx";
-
 export default function Hero() {
   return (
     <div class="relative h-[60vh] bg-neutral-500">
@@ -16,26 +15,21 @@ export default function Hero() {
         <div class="hero-content max-w-2xl flex flex-col justify-center items-end text-right h-full ml-auto">
           <h1
             class="
-                        text-4xl 
-                        md:text-4xl 
-                        lg:text-6xl 
-                        font-bold 
-                        text-light-100
-                        mb-4
-                        leading-tight
-                    "
+              text-4xl 
+              md:text-4xl 
+              lg:text-6xl 
+              font-bold 
+              text-light-100
+              mb-4
+              leading-tight
+            "
           >
             Velkommen til mit digitale space!
           </h1>
-          <p
-            class="
-                        text-xl 
-                        text-neutral-800
-                        mb-8
-                        max-w-xl
-                    "
-          >
-            Foredragsholder, Designer, Hacker og AI-Ekspert.
+          <p class="text-xl text-neutral-800 mb-8 w-full md:max-w-xl">
+            <span class="block sm:inline">Designer, Hacker &</span>
+            <span class="hidden sm:inline"> </span>
+            <span class="block sm:inline">AI-Ekspert</span>
           </p>
           <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
             <NavLink
