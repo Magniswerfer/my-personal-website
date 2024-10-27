@@ -1,15 +1,15 @@
 import { JSX } from "preact";
 import { IS_BROWSER } from "$fresh/runtime.ts";
 
-type ButtonVariant = "primary" | "secondary" | "outline" | "light";
+type ButtonVariant = "primary" | "secondary" | "outline" | "light" ;
 
-// Regular Button
 interface ButtonProps extends JSX.HTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
 }
 
 export function Button({ variant = "primary", ...props }: ButtonProps) {
-  const baseStyles = "px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
+    const baseStyles = "px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
+
   const variants = {
     primary: "bg-[#FF934F] hover:bg-[#A5668B] text-[#07090F] focus:ring-[#FF934F]",
     secondary: "bg-[#A5668B] hover:bg-[#07090F] text-[#EEE5E9] focus:ring-[#A5668B]",
@@ -24,22 +24,4 @@ export function Button({ variant = "primary", ...props }: ButtonProps) {
       class={`${baseStyles} ${variants[variant]} ${props.class ?? ""}`}
     />
   );
-}
-
-interface LinkButtonProps {
-  variant?: ButtonVariant;
-  href: string;
-  class?: string;
-  children: JSX.Element | string;
-}
-
-export function LinkButton(props: LinkButtonProps) {
-  const variants = {
-    primary: "bg-[#FF934F] hover:bg-[#A5668B] text-[#07090F]",
-    secondary: "bg-[#A5668B] hover:bg-[#07090F] text-[#EEE5E9]",
-    outline: "border-2 border-[#07090F] hover:bg-[#07090F] hover:text-[#EEE5E9] text-[#07090F]",
-    light: "border-2 border-[#EEE5E9] hover:bg-[#EEE5E9] hover:text-[#07090F] text-[#EEE5E9]"
-  };
-
-  return <a href={props.href} class={`px-4 py-2 rounded-lg font-medium ${variants[props.variant || "primary"]} ${props.class || ""}`}>{props.children}</a>;
 }
