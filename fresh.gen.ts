@@ -10,6 +10,7 @@ import * as $blog from "./routes/blog.tsx";
 import * as $blog_slug_ from "./routes/blog/[slug].tsx";
 import * as $contact from "./routes/contact.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $onsker from "./routes/onsker.tsx";
 import * as $projects from "./routes/projects.tsx";
 import * as $projects_slug_ from "./routes/projects/[slug].tsx";
 import * as $Navbar from "./islands/Navbar.tsx";
@@ -25,6 +26,7 @@ const manifest = {
     "./routes/blog/[slug].tsx": $blog_slug_,
     "./routes/contact.tsx": $contact,
     "./routes/index.tsx": $index,
+    "./routes/onsker.tsx": $onsker,
     "./routes/projects.tsx": $projects,
     "./routes/projects/[slug].tsx": $projects_slug_,
   },
