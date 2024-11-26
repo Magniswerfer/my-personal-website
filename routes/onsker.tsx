@@ -85,6 +85,13 @@ const WishlistPage = () => {
         "https://static-cdn.play.date/static/images/Playdate-in-hand1.70225f47634a.png",
       productUrl: "https://play.date/",
     },
+    {
+      name: "Steam-gavekort",
+      description: "Så jeg kan købe nye, spændende spil :)",
+      imageUrl:
+        "https://store.cloudflare.steamstatic.com/public/images/gift/steamcards_physical.png",
+      productUrl: "https://store.steampowered.com/digitalgiftcards/?l=danish",
+    },
   ];
 
   return (
